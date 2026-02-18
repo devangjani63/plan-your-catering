@@ -113,6 +113,12 @@ It is an estimate and enquiry generation engine only.
 - CRM integration
 
 ---
+## 📸 Screenshots
+
+![Admin Menu Sections](assets/screenshots/admin-menu-sections.png)
+![Estimate Form](assets/screenshots/estimate-form.png)
+![Enquiry CPT](assets/screenshots/enquiry-cpt.png)
+---
 
 ## 👨‍💻 Author
 
