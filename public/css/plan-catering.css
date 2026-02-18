@@ -1,0 +1,348 @@
+/* ==================================================
+   Plan Your Catering – Mobile First Base Styles
+   Stage 9 – Layout Only (No Branding)
+   ================================================== */
+
+#pyc-plan-catering {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.4;
+}
+
+/* Card container */
+#pyc-plan-catering {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+#pyc-plan-catering .pyc-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#pyc-plan-catering .pyc-header h2 {
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+
+#pyc-plan-catering .pyc-step-indicator {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Steps */
+#pyc-plan-catering .pyc-step {
+  margin-bottom: 28px;
+}
+
+#pyc-plan-catering .pyc-step h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Fields */
+#pyc-plan-catering .pyc-field {
+  margin-bottom: 16px;
+}
+
+#pyc-plan-catering .pyc-field label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+#pyc-plan-catering .pyc-field input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Navigation */
+#pyc-plan-catering .pyc-navigation {
+  display: flex;
+  gap: 12px;
+}
+
+#pyc-plan-catering .pyc-btn {
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#pyc-plan-catering .pyc-btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+#pyc-plan-catering .pyc-btn-secondary {
+  background: #f2f2f2;
+  color: #111;
+}
+
+/* Desktop enhancement (later expanded) */
+@media (min-width: 768px) {
+  #pyc-plan-catering {
+    max-width: 720px;
+    padding: 24px;
+  }
+}
+
+/* Menu Sections (Stage 12) */
+#pyc-plan-catering .pyc-menu-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+#pyc-plan-catering .pyc-menu-section-btn {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#pyc-plan-catering .pyc-menu-section-btn:active {
+  background: #eee;
+}
+
+#pyc-plan-catering .pyc-debug {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Modal base (Stage 14 fix) */
+.pyc-modal {
+  display: none;
+}
+
+.pyc-modal.pyc-modal-open {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.pyc-modal-content {
+  background: #fff;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pyc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pyc-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pyc-modal-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.pyc-modal-body {
+  margin-top: 16px;
+  overflow-y: auto;
+}
+
+.pyc-modal-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pyc-modal-body li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Menu Items Selection (Stage 14) */
+.pyc-item-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pyc-item-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.pyc-item-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* Menu Summary (Stage 15) */
+#pyc-menu-summary {
+  margin-top: 12px;
+}
+
+.pyc-summary-section {
+  margin-bottom: 16px;
+}
+
+.pyc-summary-section h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.pyc-summary-section ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.pyc-summary-section li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Add-ons (Stage 16) */
+#pyc-addons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pyc-addon {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.pyc-addon input {
+  margin-top: 4px;
+}
+
+.pyc-addon small {
+  display: block;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Estimate (Stage 17) */
+#pyc-estimate-box {
+  padding: 14px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.pyc-estimate-line {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.pyc-estimate-total {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.pyc-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.pyc-menu-sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Button styling stays intact */
+.pyc-menu-section-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Modal header spacing */
+.pyc-modal-header {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ensure title does not overflow */
+#pyc-modal-title {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+  padding-right: 12px;
+}
+
+/* Menu items grid */
+#pyc-modal-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 14px;
+  padding: 12px 16px 16px;
+  list-style: none;
+  margin: 0;
+}
+
+/* Each row */
+.pyc-item-row {
+  margin: 0;
+}
+
+/* Label alignment */
+.pyc-item-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Phone input row */
+.pyc-phone-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+/* Country code */
+.pyc-phone-wrap select {
+  flex: 0 0 20%;
+  min-width: 90px;
+}
+
+/* Phone number */
+.pyc-phone-wrap input[type="tel"] {
+  flex: 1;
+}
+
+/* Mobile safety */
+@media (max-width: 360px) {
+  .pyc-phone-wrap {
+    flex-direction: column;
+  }
+}
+
